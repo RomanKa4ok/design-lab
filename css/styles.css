@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+:root {
+	--font: 'Lato', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+body {
+	font: 300 16px/24px var(--font);
+	color: var(--color);
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.hidden {
+	display: none;
+}
+
+.header {
+	background: url('../images/hero-bg.jpg') no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	height: 100vh;
+	min-height: 730px;
+	padding-bottom: 115px;
+	margin-bottom: 120px;
+
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+	padding-bottom: 115px;
+}
+.header__title {
+	font-size: 44px;
+	line-height: 60px;
+	letter-spacing: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.header__desc {
+	font-size: 16px;
+	line-height: 29px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.logo {
+	margin-bottom: 80px;	
+}
+.icon:hover {
+
+}
+
+.logo .icon {
+	width: 70px;
+	height:70px;
+}
+.header__scroll .icon {
+	height: 70px;
+	width: 70px;
+}
+.header__scroll {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+.skills {
+	padding:115px 0;
+
+}
+.wrapper {
+	border: 2px solid currentcolor;
+	border-top: none;
+	text-align: center;
+}
+.wrapper__title {
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 40px;	
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	position: relative;
+	top: -20px;
+	margin-bottom: 55px;
+}
+.wrapper__title::before,
+.wrapper__title::after {
+	content: '';
+	height: 2px;
+	width: 26%;
+	background: currentColor;
+	position: absolute;
+	top: 50%;
+}
+.wrapper__title::before {
+	left: 0;
+}
+.wrapper__title::after {
+	right: 0;
+}
+.skills-wrap {
+
+}
+.about-us {
+	padding-top: 40px;
+	margin-bottom: 140px;
+}
+
+
+.about-wrap {
+
+}
+.about {
+	margin-bottom: 80px;	
+
+	padding: 0 19%;
+}
+
+.skill {
+	margin-bottom: 80px;	
+
+	padding: 0 19%;
+}
+.skill__icon {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 40px;
+}
+.skill__title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}	
+
+.skill__desc {
+	
+}
+
+
+.services {
+
+	background: url('../images/services.jpg') no-repeat top center;
+	background-size: cover;
+	padding-top: 130px;
+	color: white;
+	padding-bottom: 110px;
+}
+
+.service {
+		margin-bottom: 80px;	
+
+	padding: 0 19%;
+
+}
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.other {
+	margin-bottom: 140px;
+}
+
+.other__imgholder {
+	width: 28.35%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.other__imgholder:hover {
+	transform: scale(1.02);
+	
+}
+
+.other__imgholder:hover .other__title {
+	bottom: 50px;
+
+}
+
+
+
+.other__title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	bottom: -30px;
+	left: 40px;
+}
+
+.other__imgholder--big {
+	width: 41.5%;
+}
+
+
+.contact {
+
+}
+
+.contact-wrap {
+		margin-bottom: 80px;	
+
+	padding: 0 19%;
+}
+.contact__button {
+	width: 400px;
+	height: 60px;
+	text-transform: uppercase;
+	font-family: var(--font);
+	cursor: pointer;
+	background: #3c3c3c;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.contact__button:hover {
+	border: 2px solid #3c3c3c;
+	color:  #3c3c3c;
+	background: #fff; 
+}
+.contact__desc {
+	margin-bottom: 40px;
+}
+
+.footer {
+	height: 160px;
+
+	display: flex;
+	min-height: 160%:;
+	justify-content: center;
+	align-items: center;
+}
+.footer-icon {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	right:  30px;
+}
